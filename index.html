@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DAC builds a transparent crypto treasury and prudent yield platform across BTC, ETH, and ADA with institutional governance and reporting.">
+    <title>DACS | Regulated Digital Reserve & Yield Engine</title>
+    <link rel="icon" type="image/x-icon" href="/images/brand/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <main>
+        <section id="home-hero" class="bg-top-0">
+            <div class="container pt-200 pb-160 pt-mob-140 pb-mob-80 flex f-column gap-60 mw-640">
+                <div class="logo-area flex tab-justify-center pt-32 pt-mob-0">
+                    <h1><img alt="DACS: Digital Assets Commodities Strategy" src="images/brand/logo-white.svg" /></h1>
+                </div>
+                <div class="tab-align-text-center flex gap-24">
+                    <div class="col col-tab-full">
+                        <h2 class="offwhite title-40 title-mob-32 fw-700">A Regulated Digital Reserve for the Modern Economy</h2>
+                    </div>
+                    <div class="col col-tab-full">
+                        <p class="title-24 fw-300 mt-8">DACS builds a transparent crypto treasury and prudent yield engine across Bitcoin, Ethereum, and Cardano.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container pt-10 pb-100 pb-tab-80 flex f-column gap-32 gap-tab-40">
+                <div class="flex tab-f-cloumn justify-between tab-align-center tab-align-text-center gap-tab-20">
+                    <p><span class="offwhite">DACS:</span> Digital Assets Commodities <span class="primary">Strategy</span></p>
+                    <div class="flex gap-24 pr-32 pr-tab-0">
+                        <img alt="Bitcoin BTC" src="images/coins/BTC.svg" />
+                        <img alt="Ethereum ETH" src="images/coins/ETH.svg" />
+                        <img alt="Cardano ADA" src="images/coins/ADA.svg" />
+                    </div>
+                </div>
+
+                <div class="p-80 p-tab-40 p-mob-20 radius-mob-32 radius-40 flex f-column gap-72 gap-mob-40 bg-royal bg-light-1 tab-align-text-center tab-align-center">
+                    <div class="div">
+                        <p class="title-24 offwhite op-70">Planned Listing</p>
+                        <h2 class="title-40 title-mob-32 offwhite fw-700">Aquis Stock Exchange (Uk)</h2>
+                    </div>
+                    <div class="flex gap-40 gap-mob-24 mw-540">
+                        <div class="col flex f-column gap-16 col-tab-full">
+                            <h3 class="title-24 offwhite fw-700">Institutional partners</h3>
+                            <p class="offwhite op-70">Lorem ipsum dolor sit amet, consectetur adipisg elit, sed do eiusmod tempor incidid ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col flex f-column gap-16 col-tab-full">
+                            <h3 class="title-24 offwhite fw-700">Audits</h3>
+                            <p class="offwhite op-70">Lorem ipsum dolor sit amet, consectetur adipisg elit, sed do eiusmod tempor incidid ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col flex f-column gap-16 col-tab-full">
+                            <h3 class="title-24 offwhite fw-700">Reporting</h3>
+                            <p class="offwhite op-70">Lorem ipsum dolor sit amet, consectetur adipisg elit, sed do eiusmod tempor incidid ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-xxl flex flex-column gap-100 gap-tab-60 pt-100 pr-80 pb-100 pl-80 pt-tab-40 pr-tab-24 pb-tab-40 pl-tab-24 radius-40 radius-mob-32 bg-darkoffblack bg-top-0-darker">
+                <div class="col-full flex justify-center">
+                    <div class="flex gap-12">
+                        <img src="images/brand/dots.svg" alt="" aria-hidden="true">
+                        <h2 class="body-16 offwhite fw-400">Value <span class="primary">Pillars</span></h2>
+                    </div>
+                </div>
+
+                <div class="col-full flex gap-40 gap-tab-24 gap-mob-60 align-top">
+                    <div class="col col-mob-full flex gap-40 gap-mob-24 justify-center align-text-center">
+                        <img class="pillar-img" alt="" aria-hidden="true" src="images/pillar1.jpg" />
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Regulated <span class="primary">Mindset</span></h3>
+                            <p>Built with public-markets discipline and clear disclosures.</p>
+                        </div>
+                    </div>
+                    <div class="col col-mob-full flex gap-40 gap-mob-24  justify-center align-text-center">
+                        <img class="pillar-img" alt="" aria-hidden="true" src="images/pillar2.jpg" />
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Prudent <span class="primary">Yield</span></h3>
+                            <p>Staking and market-neutral strategies with risk limits.</p>
+                        </div>
+                    </div>
+                    <div class="col col-mob-full flex gap-40 gap-mob-24  justify-center align-text-center">
+                        <img class="pillar-img" alt="" aria-hidden="true" src="images/pillar3.jpg" />
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Radical <span class="primary">Transparency</span></h3>
+                            <p>Big-4 audit, independent assurance, and investor dashboards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-1">
+            <div class="container pt-120 pb-200 pt-tab-100 pb-tab-140 pt-mob-80 pb-mob-80">
+                <div class="flex justify-center">
+                    <div class="flex gap-12">
+                        <!-- <img src="images/brand/dots.svg" alt="" aria-hidden="true"> -->
+                        <h2 class="body-16 offwhite fw-400">How it<span class="primary">Works</span></h2>
+                    </div>
+                </div>
+
+                <div class="flex gap-44 gap-tab-24 gap-mob-60 pt-200 pt-tab-80 pt-mob-60 align-text-center align-top">
+                    <div class="col f-column col-mob-full flex gap-32 justify-center">
+                        <img src="images/brand/dots1.svg" alt="" aria-hidden="true">
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Build the <span class="primary">Reserve</span></h3>
+                            <p>Allocate to BTC/ETH/ADA under defined guardrails.</p>
+                        </div>
+                    </div>
+                    <div class="col f-column col-mob-full flex gap-32 justify-center">
+                        <img src="images/brand/dots2.svg" alt="" aria-hidden="true">
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Deploy the <span class="primary">Yield</span></h3>
+                            <p>Staking + hedged strategies; conservative liquidity.</p>
+                        </div>
+                    </div>
+                    <div class="col f-column col-mob-full flex gap-32 justify-center">
+                        <img src="images/brand/dots3.svg" alt="" aria-hidden="true">
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Report <span class="primary">& Reinvest</span></h3>
+                            <p>Publish results, recycle yield, strengthen the reserve.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container pt-60 pb-120 pr-80 pl-80 pr-tab-24 pl-tab-24 pt-tab-40 pb-tab-40 bg-darkoffblack bg-top-0-darker radius-40">
+                <div class="flex justify-center">
+                    <div class="flex gap-12">
+                        <img src="images/brand/dots.svg" alt="" aria-hidden="true">
+                        <h2 class="body-16 offwhite fw-400">Who We<span class="primary">Serve</span></h2>
+                    </div>
+                </div>
+
+                <div class="flex gap-60 gap-tab-24 gap-mob-60 pt-100 pt-tab-80 pt-mob-60 align-text-center align-top">
+                    <div class="col f-column col-mob-full flex gap-28 justify-center">
+                        <div class="icon-44 primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99993 15.6825V11.619M11.9999 15.6825V9.5873M16.9999 15.6825V11.619M3 8.57143L12 4L21 8.57143M3 20H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Institutions <span class="primary">& Treasuries</span></h3>
+                            <p>Seeking regulated exposure and reporting.</p>
+                        </div>
+                    </div>
+                    <div class="col f-column col-mob-full flex gap-28 justify-center">
+                        <div class="icon-44 primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.4 19.8004C19.2177 19.9497 20.8195 18.6144 21 16.7996C20.8189 14.9852 19.2172 13.6507 17.4 13.8M12 5.99958C12 7.6562 10.657 8.99915 9.0004 8.99915C7.34379 8.99915 6.00083 7.6562 6.00083 5.99958C6.00083 4.34296 7.34379 3 9.0004 3C10.657 3 12 4.34296 12 5.99958ZM14.9996 16.7996C14.9996 19.1139 12.3137 21 8.99914 21C5.68457 21 3 19.119 3 16.7996C3 14.4801 5.68585 12.6004 9.00042 12.6004C12.315 12.6004 14.9996 14.4801 14.9996 16.7996ZM18.3501 8.7999C18.3501 9.79401 17.5442 10.5999 16.5501 10.5999C15.556 10.5999 14.7501 9.79401 14.7501 8.7999C14.7501 7.80578 15.556 6.99989 16.5501 6.99989C17.0275 6.99989 17.4853 7.18954 17.8229 7.5271C18.1605 7.86467 18.3501 8.3225 18.3501 8.7999Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class=" title-24 title-tab-20 fw-700 offwhite mb-12">Family Offices <span class="primary">& HNW</span></h3>
+                            <p>Seeking risk‑managed digital diversification.</p>
+                        </div>
+                    </div>
+                    <div class="col f-column col-mob-full flex gap-28 justify-center">
+                        <div class="icon-44 primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.28662 21H17.7134M4.00123 7.1148V13.2852C3.94817 15.5003 5.61375 17.3418 7.72295 17.4H16.2759C18.3856 17.3424 20.0518 15.5007 19.9988 13.2852V7.1148C20.0518 4.89974 18.3862 3.05824 16.2771 3H7.72295C5.61375 3.05824 3.94817 4.89974 4.00123 7.1148Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class=" title-24 title-tab-20 fw-700 offwhite mb-12">Brokers <span class="primary">/Platforms</span></h3>
+                            <p>Seeking compliant access for eligible clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-2">
+            <div class="container flex f-column pt-120 pb-200 pt-tab-100 pb-tab-140 pt-mob-80 pb-mob-80 tab-align-center">
+                <div class="flex justify-center">
+                    <div class="flex gap-12">
+                        <img src="images/brand/dots.svg" alt="" aria-hidden="true">
+                        <h2 class="body-16 offwhite fw-400">Proof <span class="primary">Points</span></h2>
+                    </div>
+                </div>
+
+                <div class="flex gap-60 pt-160 pt-tab-80 pt-mob-60 align-text-center align-top mw-640">
+                    <div class="col f-column col-tab-full flex gap-32 justify-center">
+                        <div class="icon-44 primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.4859 16.4864L21 21M3 10.9005C2.99943 7.1323 5.66106 3.88843 9.35713 3.15277C13.0532 2.4171 16.7543 4.39455 18.1969 7.87575C19.6395 11.357 18.4219 15.3723 15.2887 17.4662C12.1555 19.5601 7.97931 19.1493 5.31424 16.4851C3.83265 15.0041 3.00018 12.9953 3 10.9005Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Independent audit engagement</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisg elit, sed do eiusmod tempor incidid ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                    <div class="col f-column col-tab-full flex gap-32 justify-center">
+                        <div class="icon-44 primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.30676 12.0198L10.7678 14.5914L15.6898 9.43795M19.9965 7.52725C20.1504 16.3285 15.1262 20.0727 12.2776 20.956C12.0889 21.0147 11.888 21.0147 11.6993 20.956C8.89741 20.0881 4.01723 16.4545 4 7.9657C4.01688 7.23215 4.41171 6.56535 5.03239 6.22218C9.36869 3.66347 11.4544 3 11.9847 3C12.5151 3 14.7657 3.7059 19.3899 6.47162C19.756 6.68721 19.9865 7.08826 19.9965 7.52725Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Institutional custody with insurance framework</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisg elit, sed do eiusmod tempor incidid ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                    <div class="col f-column col-tab-full flex gap-32 justify-center">
+                        <div class="icon-44 primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 12C3 12 6.27273 5.5 12 5.5C17.7273 5.5 21 12 21 12C21 12 17.7273 18.5 12 18.5C6.27273 18.5 3 12 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0001 14.4373C13.3557 14.4373 14.4546 13.346 14.4546 11.9998C14.4546 10.6536 13.3557 9.56234 12.0001 9.56234C10.6445 9.56234 9.54553 10.6536 9.54553 11.9998C9.54553 13.346 10.6445 14.4373 12.0001 14.4373Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="title-24 title-tab-20 fw-700 offwhite mb-12">Quarterly reporting & real‑time treasury overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisg elit, sed do eiusmod tempor incidid ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container flex f-column gap-80 gap-mob-40 pt-20 pb-100 pb-tab-80 pb-mob-20">
+                <div class="flex no-wrap justify-between align-center">
+                    <div class="flex">
+                        <h2 class="title-40 title-mob-24 offwhite fw-700">Explore <span class="primary">Documents</span></h2>
+                    </div>
+                    <a href="" class="btn btn-primary ghost">All Docs
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6L16 12L10 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="flex gap-40 gap-tab-24 gap-mob-48">
+                    <div class="col col-mob-full" include-html="includes/document.html"></div>
+                    <div class="col col-mob-full" include-html="includes/document.html"></div>
+                    <div class="col col-mob-full" include-html="includes/document.html"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-3">
+            <div class="container flex f-column gap-80 gap-mob-40 pt-120 pb-120 pb-tab-80 pb-mob-80">
+                <div class="flex no-wrap justify-between align-center">
+                    <div class="flex gap-12">
+                        <img src="images/brand/dots.svg" alt="" aria-hidden="true">
+                        <h2 class="body-16 offwhite fw-400">Recent<span class="primary">Insights</span></h2>
+                    </div>
+                    <a href="" class="btn btn-primary ghost">All Insights
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6L16 12L10 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="flex gap-28 gap-mob-48">
+                    <div class="col col-tab-full flex gap-28 gap-mob-48">
+                        <div class="col col-mob-full" include-html="includes/article.html"></div>
+                        <div class="col col-mob-full" include-html="includes/article.html"></div>
+                    </div>
+                    <div class="col col-tab-full flex gap-28 gap-mob-48">
+                        <div class="col col-mob-full" include-html="includes/article.html"></div>
+                        <div class="col col-mob-full" include-html="includes/article.html"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container pt-60 pb-40" include-html="includes/footer.html"></div>
+    </footer>
+
+
+
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
