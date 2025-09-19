@@ -1628,13 +1628,12 @@ header .mini-logo {
         position: absolute;
         left: 0px;
         top: 56px;
-        padding: 40px;
+        padding: 40px 0px 0px 40px;
         left: -24px;
         width: 100vw;
         background:var(--offblack);
         height: 0px;
         display:none;
-        pointer-events: none;
         opacity:0;
         overflow:hidden;
         transition: .6s all ease;
@@ -1642,9 +1641,13 @@ header .mini-logo {
 
     header nav.show {
         display:flex;
+    }
+
+    header nav.show.anima {
         height: calc(100svh - 56px);
         opacity:1;
-        pointer-events: all;
+        padding: 60px 0px 0px 40px;
+
     }
 
     header nav ul {
@@ -1652,12 +1655,12 @@ header .mini-logo {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
-        padding-left:40px;
+        padding-left:20px;
     }
 
     header nav ul li a {
-        font-size:16px;
-        font-weight:400;
+        font-size:1.4rem;
+        font-weight:300;
     }
 
     .nav-mob-top {
