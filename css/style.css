@@ -55,6 +55,8 @@
 
     --offblack-60: rgb(from var(--offblack) r g b / 60%); 
 
+    --darkoffblack-60: rgb(from var(--darkoffblack) r g b / 60%); 
+
  }
 
  html {
@@ -102,6 +104,12 @@ body.no-scroll {
     color:var(--darkoffblack);
  }
 
+ .darkoffblack-60 {
+    color:var(--darkoffblack-60);
+ }
+
+
+
  .offblack {
     color:var(--offblack);
  }
@@ -144,6 +152,10 @@ body.no-scroll {
 
  .bg-gray {
     background-color:var(--gray);
+ }
+
+  .bg-darkoffblack-60 {
+    background-color: var(--darkoffblack-60);
  }
 
  /*fonts*/
@@ -983,6 +995,10 @@ strong {
 
 /* useful */
 
+.h-max-cont {
+    height:max-content;
+}
+
 .d-none {
     display:none!important;
 }
@@ -1453,6 +1469,12 @@ input::-webkit-contacts-auto-fill-button {
 
 .bg-dark-1 {
     background-image: url('../images/backgrounds/Background2-dark.png');
+    background-size: cover;
+    background-position: top center;
+}
+
+.bg-dark-1-gradient {
+    background: linear-gradient(to top, rgb(from var(--offblack) r g b / 100%), rgb(from var(--offblack) r g b / 0%) 50%) , url('../images/backgrounds/Background2-dark.png');
     background-size: cover;
     background-position: top center;
 }
@@ -2561,11 +2583,11 @@ header .mini-logo {
         flex-direction: column;
     }
 
-    .mw-640 {
+    .tab-mw-640 {
         max-width: 640px;
     }
 
-    .mw-540 {
+    .tab-mw-540 {
         max-width: 540px;
     }
 
