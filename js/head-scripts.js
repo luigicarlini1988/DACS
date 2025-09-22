@@ -1,3 +1,22 @@
+// NOT NEEDED ON DYMANIC WEBSITES MANAGED VIA CMS
+
+window.onload = function () {
+    const currentPath = window.location.pathname; // Get the current path
+    const links = document.querySelectorAll('.menu-item'); // Select all menu links
+
+    links.forEach(function (link) {
+        // Check if the link's href matches the current page's path
+        if (link.getAttribute('href') === currentPath) {
+            // Add aria-current page
+            link.setAttribute('aria-current', 'page');
+
+        }
+    });
+};
+
+
+// Include html parts, also not needed on dymanic website managed differently
+
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */

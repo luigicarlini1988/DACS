@@ -1,4 +1,4 @@
-// inlcude html widgets
+// inlcude html widgets ( NOT NEEDED ON CMS DYMANIC WEBSITE OFCOURSE)
 includeHTML();
 
 
@@ -13,7 +13,7 @@ function showMenu() {
 }
 
 
-//circle inside the mobile mebu with TAB navigation
+//circle inside the mobile mebu with TAB navigation (ACCESSIBILITY THING)
 // Add event listener to the 'keydown' event on the document
 document.addEventListener("keydown", function (e) {
     const target = e.target;
