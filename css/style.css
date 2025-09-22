@@ -45,6 +45,7 @@
     --primary-2: rgb(from var(--primary) r g b / 2%);
     --primary-5: rgb(from var(--primary) r g b / 5%);
     --primary-10: rgb(from var(--primary) r g b / 10%);
+    --primary-16: rgb(from var(--primary) r g b / 16%);
     --primary-20: rgb(from var(--primary) r g b / 20%);
     --primary-40: rgb(from var(--primary) r g b / 40%); 
     --primary-60: rgb(from var(--primary) r g b / 60%); 
@@ -1130,6 +1131,11 @@ a:has(.documents-wrapper):focus-visible {
     outline:none!important;
 }
 
+.small-cripto img {
+    width:26px;
+    height:26px;
+}
+
 
 /*layout*/
 
@@ -1243,6 +1249,28 @@ a:has(.documents-wrapper):focus-visible {
 
 .radius-12 {
     border-radius:12px;
+}
+
+/*borders*/
+
+.b-1 {
+    border:1px solid var(--primary-16);
+}
+
+.bt-1 {
+    border-top:1px solid var(--primary-16);
+}
+
+.bb-1 {
+    border-bottom:1px solid var(--primary-16);
+}
+
+.bl-1 {
+    border-left:1px solid var(--primary-16);
+}
+
+.br-1 {
+    border-right:1px solid var(--primary-16);
 }
 
 /* buttons */
@@ -3481,6 +3509,16 @@ header .mini-logo {
 
     .documents-wrapper.news {
         height: 240px;
+    }
+
+    /* useful */
+
+    .d-mob-none {
+        display:none!important;
+    }
+
+    .mob-justify-center {
+        justify-content: center;
     }
 }
 
