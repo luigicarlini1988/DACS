@@ -17,6 +17,8 @@
     --gray: #6F6F7F;
     --gray2: #9090A9; 
 
+    --space-0: 0px;
+    --space-2: 2px;
     --space-4: 4px;
     --space-8: 8px;
     --space-10: 10px;
@@ -927,6 +929,14 @@ strong {
 
 .mr-200 {
     margin-right:var(--space-200);
+}
+
+.gap-0 {
+    gap:var(--space-0)
+}
+
+.gap-2 {
+    gap:var(--space-2)
 }
 
 .gap-4 {
@@ -2464,6 +2474,13 @@ header .mini-logo {
         margin-right:var(--space-200);
     }
 
+    .gap-tab-0 {
+    gap:var(--space-0);
+    }
+
+    .gap-tab-2 {
+        gap:var(--space-2);
+    }
     .gap-tab-4 {
         gap:var(--space-4)
     }
@@ -2607,7 +2624,7 @@ header .mini-logo {
         text-align: center;
     }
 
-    .tab-f-cloumn {
+    .tab-f-column {
         flex-direction: column;
     }
 
@@ -3353,6 +3370,14 @@ header .mini-logo {
         margin-right:var(--space-200);
     }
 
+    .gap-mob-0 {
+        gap:var(--space-0)
+    }
+
+    .gap-mob-2 {
+        gap:var(--space-2)
+    }
+
     .gap-mob-4 {
         gap:var(--space-4)
     }
@@ -3520,6 +3545,11 @@ header .mini-logo {
     .mob-justify-center {
         justify-content: center;
     }
+
+
+    /* layout */
+
+
 }
 
 
