@@ -1,12 +1,14 @@
-// NOT NEEDED ON DYMANIC WEBSITES MANAGED VIA CMS
+// adding the aria-current to active pages. NOT NEEDED ON DYMANIC WEBSITES MANAGED VIA CMS
 
 window.onload = function () {
     const currentPath = window.location.pathname; // Get the current path
     const links = document.querySelectorAll('.menu-item'); // Select all menu links
 
     links.forEach(function (link) {
+
+        const starting = link.getAttribute('href');
         // Check if the link's href matches the current page's path
-        if (link.getAttribute('href') === currentPath) {
+        if (('/' + starting === currentPath) || ('/DACS/' + starting === currentPath)) {
             // Add aria-current page
             link.setAttribute('aria-current', 'page');
 
