@@ -1161,6 +1161,51 @@ a:has(.documents-wrapper):focus-visible {
     height:26px;
 }
 
+.article-main-thumb {
+    width:100%;
+    height:auto;
+    position:relative;
+    aspect-ratio:16/9;
+}
+
+.article-main-thumb img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+/* article styles */
+
+.article-text h1 {
+    margin-bottom:1.3rem;
+}
+
+.article-text h2 {
+    margin-bottom:1.2rem;
+}
+
+.article-text h3 {
+    margin-bottom:1.1rem;
+}
+
+.article-text h4 {
+    margin-bottom:1rem;
+}
+
+.article-text h5 {
+    margin-bottom:1rem;
+}
+
+.article-text p {
+    margin-bottom:1rem;
+}
+
+.article-text img {
+    width:100%;
+    margin-bottom: 1rem;
+}
 
 /*layout*/
 
@@ -1175,6 +1220,13 @@ a:has(.documents-wrapper):focus-visible {
     width:calc(100% - 88px);
     margin:0px auto;
 }
+
+.container-small {
+    max-width:1024px;
+    width:calc(100% - 88px);
+    margin:0px auto;
+}
+
 
 .flex {
     display: flex;
@@ -1250,6 +1302,10 @@ a:has(.documents-wrapper):focus-visible {
 
 .col-6 {
     width:50%;
+}
+
+.col-8 {
+    width:66%;
 }
 
 .radius-40 {
@@ -1819,6 +1875,12 @@ header .mini-logo {
 
     .container {
         max-width:1200px;
+        width:calc(100% - 60px);
+        margin:0px auto;
+    }
+
+    .container-small {
+        max-width:1024px;
         width:calc(100% - 60px);
         margin:0px auto;
     }
@@ -2712,6 +2774,15 @@ header .mini-logo {
         max-width: 540px;
     }
 
+    .col.sidebar {
+        display: flex;
+        gap: 32px;
+    }
+
+    .col.sidebar .col {
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width:880px) {
@@ -2719,6 +2790,8 @@ header .mini-logo {
         width:100%;
         flex:auto;
     }
+
+
 }
 
 
@@ -3549,16 +3622,31 @@ header .mini-logo {
     }
 
 
-    .container {
+    .container,
+    .container-xxl,
+    .container-small {
         width: calc(100% - 32px);
     }
 
-    .container-xxl {
-        width: calc(100% - 32px);
-    }
 
     .col-mob-full {
         width:100%;
+        flex:auto;
+    }
+
+     .col-safe-full {
+        width:100%;
+        flex:auto;
+    }
+
+    .col.sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .col.sidebar .col {
+        width: 100%;
         flex:auto;
     }
 
