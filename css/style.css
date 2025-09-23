@@ -2655,6 +2655,11 @@ header .mini-logo {
         flex:1 1 0;
     }
 
+    .col-tab-6 {
+        width:50%;
+        flex:auto;
+    }
+
     .radius-tab-40 {
         border-radius:40px;
     }
