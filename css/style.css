@@ -1775,7 +1775,7 @@ header .mini-logo {
     }
 
     header nav.show.anima {
-        height: calc(100svh - 56px);
+        height: calc(100vh - 56px);
         opacity:1;
         padding: 60px 0px 0px 40px;
 
