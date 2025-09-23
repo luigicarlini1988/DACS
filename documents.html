@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DAC builds a transparent crypto treasury and prudent yield platform across BTC, ETH, and ADA with institutional governance and reporting.">
+    <title>DACS | Documents</title>
+    <link rel="icon" type="image/x-icon" href="/images/brand/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom Javascript functions -->
+    <script src="js/head-scripts.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-xxl pt-16 pb-16 pt-tab-8 pb-tab-8 flex justify-between relative align-center" include-html="includes/main-menu.html">
+            <!-- include/main-menu.html here -->
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container flex f-column gap-40  pt-160 pt-tab-120 pb-60 bg-top-0">
+                <div class="flex no-wrap justify-between align-center">
+                    <div class="flex">
+                        <h2 class="title-32 title-mob-24 offwhite fw-700">Documents <span class="primary">Hub</span></h2>
+                    </div>
+                    <button id="toggle-filters" class="btn btn-primary" onclick="showFilters()">Filters
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.7143 5.35051H21M5.99186 5.35051H3M10.7143 18.6298H21M5.99186 18.6298H3M13.2857 11.9902H3M18.0081 11.9902H21M10.3157 6.66863C10.963 5.69475 10.8003 4.3932 9.93334 3.60903C9.06638 2.82486 7.75659 2.79455 6.85438 3.5378C5.95217 4.28104 5.72962 5.57368 6.33123 6.57645C6.93284 7.57922 8.17717 7.9897 9.25632 7.54139C9.68757 7.36123 10.0561 7.05762 10.3157 6.66863ZM10.3157 19.9467C10.963 18.9728 10.8003 17.6712 9.93334 16.8871C9.06638 16.1029 7.75659 16.0726 6.85438 16.8158C5.95217 17.5591 5.72962 18.8517 6.33123 19.8545C6.93284 20.8573 8.17717 21.2677 9.25632 20.8194C9.68757 20.6393 10.0561 20.3357 10.3157 19.9467ZM13.6843 13.307C13.037 12.3331 13.1997 11.0316 14.0667 10.2474C14.9336 9.46321 16.2434 9.4329 17.1456 10.1761C18.0478 10.9194 18.2704 12.212 17.6688 13.2148C17.0672 14.2176 15.8228 14.6281 14.7437 14.1797C14.3124 13.9996 13.9439 13.696 13.6843 13.307Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="filters">
+                    <div id="filters-wrap" class="flex align-left gap-16 col-full pt-8 pb-8 pl-16 pr-16 bg-darkoffblack radius-12">
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="All" checked="checked"> All
+                        </label>
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="Deks"> Decks
+                        </label>
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="One-pagers"> One-pagers
+                        </label>
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="Presentations"> Presentations
+                        </label>
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="Press Releases"> Press Releases
+                        </label>
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="Policies"> Policies
+                        </label>
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="RNS"> RNS
+                        </label>
+                        <label class="p-8">
+                            <input type="radio" name="filter" value="Media"> Media
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document_alt.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document_alt.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document.html"></div>
+                    <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-32 col-safe-full" include-html="includes/document.html"></div>
+                </div>
+
+                <div class="flex justify-center">
+                    <button class="btn btn-primary">Load More Documents</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container pt-60 pb-40" include-html="includes/footer.html">
+            <!-- include/footer.html here -->
+        </div>
+    </footer>
+
+    <!-- Custom Javascript functions -->
+    <script src="js/body-scripts.js"></script>
+
+
+</body>
+
+</html>

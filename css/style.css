@@ -228,6 +228,24 @@ strong {
 
 /* spacings */
 
+.p-0 {
+    padding:var(--space-0);
+}
+
+.pt-0 {
+    padding-top:var(--space-0);
+}
+
+.pl-0 {
+    padding-left:var(--space-0);
+}
+.pr-0 {
+    padding-right:var(--space-0);
+}
+.pb-0 {
+    padding-bottom:var(--space-0);
+}
+
 .p-4 {
     padding:var(--space-4);
 }
@@ -1477,6 +1495,62 @@ textarea:-webkit-autofill:focus {
 input::-webkit-contacts-auto-fill-button {
     background-color:var(--primary);
 }
+
+
+input[type="radio"] {
+  appearance: none;
+
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid var(--gray2);
+  transition: 0.2s all ease;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:checked:hover  {
+  border: 6px solid var(--primary);
+}
+
+input[type="radio"]:hover {
+    border-color: var(--primary);
+}
+
+label:has(input[type="radio"]) {
+    transition: 0.2s all ease;
+    cursor:pointer;
+}
+
+label:has(input[type="radio"]):hover{
+    color:var(--offwhite);
+}
+
+
+
+
+/* Demo Code */
+#filters {
+  display: none;
+  height: 0;
+  transition: all .3s ease;
+  overflow:hidden;
+}
+  
+#filters[open] {
+  height: auto;
+  height: calc-size(auto, size);
+  display: flex;
+  
+  @starting-style {
+    height: 0;
+  }
+}
+
 
 
 /* background images style */

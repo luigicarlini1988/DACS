@@ -12,6 +12,12 @@ function showMenu() {
     }, 200);
 }
 
+//toggle DOCUMENTS filters
+function showFilters() {
+    document.getElementById("filters").toggleAttribute('open');
+}
+
+
 
 //circle inside the mobile mebu with TAB navigation (ACCESSIBILITY THING)
 // Add event listener to the 'keydown' event on the document
