@@ -19,6 +19,7 @@ function showFilters() {
 
 
 
+
 //circle inside the mobile mebu with TAB navigation (ACCESSIBILITY THING)
 // Add event listener to the 'keydown' event on the document
 document.addEventListener("keydown", function (e) {

@@ -1175,6 +1175,69 @@ a:has(.documents-wrapper):focus-visible {
     object-fit: cover;
 }
 
+/* Tables */
+
+table {
+    border-collapse: collapse;
+    background:var(--darkoffblack-60);
+    border-radius:20px;
+    overflow:hidden;
+    width:100%;
+}
+
+
+tbody tr:first-child {
+    background:var(--royal);
+}
+
+table th {
+    text-align: left;
+    font-size: 0.875rem;
+    line-height:1.625rem;
+    color:var(--offwhite);
+    padding:16px 0px 16px 24px;
+ 
+}
+
+table td,
+table th {
+    border:1px solid var(--primary-10);
+}
+
+table td {
+    padding:14px 0px 14px 24px;
+}
+
+table td:first-child,
+table td:first-child a {
+    color:var(--offwhite);
+    text-decoration: none;
+    transition: .2s all ease;
+}
+
+table td:first-child a:hover {
+    color:var(--primary);
+    text-decoration: underline;
+}
+
+#financial-calendar button {
+    color:var(--gray2);
+    background:none;
+    border:none;
+    font-size:1rem;
+    font-weight:400;
+    padding:6px;
+    transition:.2s ease all;
+}
+
+#financial-calendar button:hover {
+    color:var(--offwhite);
+}
+
+#financial-calendar button[aria-current="true"]{
+    color:var(--primary);
+}
+
 
 /* article styles */
 
@@ -3711,8 +3774,13 @@ header .mini-logo {
     }
 
 
-    /* layout */
-
+    /* tables */
+    table td,
+    table th {
+        padding: 10px;
+        font-size: 0.875rem;
+        line-height:1.225rem;
+    }
 
 }
 
