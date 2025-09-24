@@ -12,7 +12,10 @@ window.onload = function () {
             // Add aria-current page
             link.setAttribute('aria-current', 'page');
 
+        } else if (('/' === currentPath) || ('/DACS/' === currentPath)) {
+            links[0].setAttribute('aria-current', 'page');
         }
+
     });
 
 };
