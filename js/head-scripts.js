@@ -6,13 +6,16 @@ window.onload = function () {
 
     links.forEach(function (link) {
 
+        // get menu item href link
         const starting = link.getAttribute('href');
         // Check if the link's href matches the current page's path
         if (('/' + starting === currentPath) || ('/DACS/' + starting === currentPath)) {
             // Add aria-current page
             link.setAttribute('aria-current', 'page');
 
+            // Check if the index.html is not specified on the homepage url
         } else if (('/' === currentPath) || ('/DACS/' === currentPath)) {
+            // Add aria-current to home menu-item
             links[0].setAttribute('aria-current', 'page');
         }
 

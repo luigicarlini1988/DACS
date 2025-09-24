@@ -1,10 +1,10 @@
-// switch calendars DATA in Investors Relations Page
+// switch calendars DATA in Investors Relations Page getting the HTML tables from the /include html files
 
 const load2024 = document.getElementById("2024");
 const load2025 = document.getElementById("2025");
 const contentDiv = document.getElementById("calendars");
-const url2024 = "includes/financial-calendar-2024.html"
-const url2025 = "includes/financial-calendar-2025.html"
+const url2024 = "includes/tables/financial-calendar-2024.html"
+const url2025 = "includes/tables/financial-calendar-2025.html"
 
 load2024.onclick = reqData2024;
 
