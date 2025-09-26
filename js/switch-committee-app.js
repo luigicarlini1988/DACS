@@ -9,8 +9,14 @@ load_invest.onclick = reqDataInvest;
 
 function outputInvest(data) {
     contentDiv.innerHTML = this.responseText;
+
+    var list, index;
+    list = document.getElementsByClassName("cmtee-switch");
+    for (index = 0; index < list.length; ++index) {
+        list[index].setAttribute('aria-current', 'false');
+    }
+
     load_invest.setAttribute('aria-current', 'true');
-    load_audit.setAttribute('aria-current', 'false');
 }
 
 function reqDataInvest() {
@@ -18,7 +24,7 @@ function reqDataInvest() {
     xhr.addEventListener('load', outputInvest);
     xhr.open('GET', url_invest);
     xhr.send();
-    console.log(xhr);
+
 }
 
 
@@ -26,8 +32,14 @@ load_audit.onclick = reqDataAudit;
 
 function outputAudit(data) {
     contentDiv.innerHTML = this.responseText;
+
+    var list, index;
+    list = document.getElementsByClassName("cmtee-switch");
+    for (index = 0; index < list.length; ++index) {
+        list[index].setAttribute('aria-current', 'false');
+    }
+
     load_audit.setAttribute('aria-current', 'true');
-    load_invest.setAttribute('aria-current', 'false');
 }
 
 function reqDataAudit() {
@@ -35,5 +47,5 @@ function reqDataAudit() {
     xhr.addEventListener('load', outputAudit);
     xhr.open('GET', url_audit);
     xhr.send();
-    console.log(xhr);
+
 }

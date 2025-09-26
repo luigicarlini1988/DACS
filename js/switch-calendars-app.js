@@ -11,8 +11,14 @@ load2024.onclick = reqData2024;
 function output2024(data) {
 
     contentDiv.innerHTML = this.responseText;
+
+    var list, index;
+    list = document.getElementsByClassName("calendar");
+    for (index = 0; index < list.length; ++index) {
+        list[index].setAttribute('aria-current', 'false');
+    }
+
     load2024.setAttribute('aria-current', 'true');
-    load2025.setAttribute('aria-current', 'false');
 }
 
 function reqData2024() {
@@ -20,7 +26,7 @@ function reqData2024() {
     xhr.addEventListener('load', output2024);
     xhr.open('GET', url2024);
     xhr.send();
-    console.log(xhr);
+
 }
 
 
@@ -29,8 +35,12 @@ load2025.onclick = reqData2025;
 function output2025(data) {
 
     contentDiv.innerHTML = this.responseText;
+    var list, index;
+    list = document.getElementsByClassName("calendar");
+    for (index = 0; index < list.length; ++index) {
+        list[index].setAttribute('aria-current', 'false');
+    }
     load2025.setAttribute('aria-current', 'true');
-    load2024.setAttribute('aria-current', 'false');
 }
 
 function reqData2025() {
@@ -38,6 +48,6 @@ function reqData2025() {
     xhr.addEventListener('load', output2025);
     xhr.open('GET', url2025);
     xhr.send();
-    console.log(xhr);
+
 }
 
