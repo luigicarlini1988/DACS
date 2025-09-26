@@ -4,16 +4,54 @@ includeHTML();
 
 //toggle mobile menu
 function showMenu() {
-    document.getElementById("navigation").classList.toggle("show");
-    document.getElementById("make-dialog").setAttribute('role', 'dialog');
-    setTimeout(function () {
-        document.getElementById("navigation").classList.toggle("anima");
-    }, 200);
+    const naviga = document.getElementById("navigation")
+    const menMenu = document.getElementById("make-dialog");
+    const role = menMenu.getAttribute('role');
+
+    if (role === '') {
+
+        naviga.classList.add("show");
+        menMenu.setAttribute('role', 'dialog');
+        setTimeout(function () {
+            naviga.classList.toggle("anima");
+        }, 200);
+    } else if (role === 'dialog') {
+        menMenu.setAttribute('role', '');
+        naviga.classList.toggle("anima");
+        setTimeout(function () {
+            naviga.classList.add("show");
+        }, 200);
+    }
 }
 
 //toggle DOCUMENTS filters
+
 function showFilters() {
-    document.getElementById("filters").toggleAttribute('open');
+    const wrap = document.getElementById('filters-wrap');
+    const filo = document.getElementById('filters');
+    const state = filo.getAttribute('state');
+    const wrapState = wrap.getAttribute('state');
+
+
+    console.log(state);
+    console.log(wrapState);
+
+    if (state === 'closed') {
+        filo.setAttribute('state', 'opened');
+    } else if (state === 'opened') {
+
+        filo.setAttribute('state', 'closed');
+
+    }
+
+    if (wrapState === 'hidden') {
+        wrap.setAttribute('state', 'visible');
+    } else if (state === 'opened') {
+        setTimeout(function () {
+            wrap.setAttribute('state', 'hidden');
+        }, 200);
+    }
+
 }
 
 

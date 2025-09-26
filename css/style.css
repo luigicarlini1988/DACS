@@ -1730,15 +1730,34 @@ label:has(input[type="radio"]):hover{
 
 
 
-/* Demo Code */
+/* filtes open */
+
+
 #filters {
-  display: none;
+  
   height: 0;
   transition: all .3s ease;
   overflow:hidden;
 }
   
-#filters[open] {
+#filters[state='opened'] {
+  height: auto;
+  height: calc-size(auto, size);
+  display: flex;
+  
+  @starting-style {
+    height: 0;
+  }
+}
+
+#filters-wrap {
+  height: 0;
+  display:none;
+  transition: all .3s ease;
+  overflow:hidden;
+}
+
+#filters-wrap[state='visible'] {
   height: auto;
   height: calc-size(auto, size);
   display: flex;

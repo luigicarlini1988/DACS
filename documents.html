@@ -30,7 +30,7 @@
 
     <main>
         <section class="bg-top-0">
-            <div class="container flex f-column gap-40  pt-160 pt-tab-120 pb-60">
+            <div class="container flex f-column pt-160 pt-tab-120 pb-60">
                 <div class="flex no-wrap justify-between align-center">
                     <div class="flex">
                         <h2 class="title-32 title-mob-24 offwhite fw-700">Documents <span class="primary">Hub</span></h2>
@@ -44,8 +44,8 @@
                     </button>
                 </div>
 
-                <div id="filters">
-                    <div id="filters-wrap" class="flex align-left gap-16 col-full pt-8 pb-8 pl-16 pr-16 bg-darkoffblack radius-12">
+                <div id="filters" state="closed" class="pt-20">
+                    <div id="filters-wrap" state="hidden" class="flex align-left gap-16 col-full pt-8 pb-8 pl-16 pr-16 bg-darkoffblack radius-12">
                         <label class="p-8">
                             <input type="radio" name="filter" value="All" checked="checked"> All
                         </label>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="flex">
+                <div class="flex pt-20">
                     <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-40 col-safe-full" include-html="includes/document.html"></div>
                     <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-40 col-safe-full" include-html="includes/document_alt.html"></div>
                     <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-40 col-safe-full" include-html="includes/document.html"></div>
@@ -85,7 +85,7 @@
                     <div class="col-3 p-12 pb-40 pt-0 p-mob-0 pb-mob-40 col-safe-full" include-html="includes/document.html"></div>
                 </div>
 
-                <div class="flex justify-center">
+                <div class="flex justify-center pt-40">
                     <button class="btn btn-primary">Load More Documents</button>
                 </div>
             </div>
