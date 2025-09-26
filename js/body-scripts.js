@@ -1,6 +1,7 @@
 // inlcude html widgets ( NOT NEEDED ON CMS DYMANIC WEBSITE OFCOURSE)
 includeHTML();
 
+
 //toggle mobile menu
 function showMenu() {
     document.getElementById("navigation").classList.toggle("show");

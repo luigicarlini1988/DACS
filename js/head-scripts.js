@@ -1,34 +1,3 @@
-window.onload = function () {
-    const currentPath = window.location.pathname; // Get the current path
-    const links = document.querySelectorAll('.menu-item'); // Select all menu links
-
-    console.log(links);
-
-    links.forEach(function (link) {
-
-        // get menu item href link
-        const starting = link.getAttribute('href');
-
-        // Check if the link's href matches the current page's path
-        if (('/' + starting === currentPath) || ('/DACS/' + starting === currentPath)) {
-            // Add aria-current page
-            link.setAttribute('aria-current', 'page');
-            console.log('starting path:', starting);
-            console.log('current path:', currentPath);
-
-
-            // Check if the index.html is not specified on the homepage url
-        } else if (('/' === currentPath) || ('/DACS/' === currentPath)) {
-            // Add aria-current to home menu-item
-            links[0].setAttribute('aria-current', 'page');
-
-        }
-
-    });
-
-};
-
-
 // Include html parts, also not needed on dymanic website managed differently
 
 function includeHTML() {
@@ -57,4 +26,35 @@ function includeHTML() {
             return;
         }
     }
+
+    const currentPath = window.location.pathname; // Get the current path
+    const links = document.querySelectorAll('.menu-item'); // Select all menu links
+
+    console.log('test');
+    console.log('links:', links)
+
+
+    links.forEach(function (link) {
+
+        // get menu item href link
+        const starting = link.getAttribute('href');
+
+        // Check if the link's href matches the current page's path
+        if (('/' + starting === currentPath) || ('/DACS/' + starting === currentPath)) {
+            // Add aria-current page
+            link.setAttribute('aria-current', 'page');
+            console.log('starting path:', starting);
+            console.log('current path:', currentPath);
+
+
+            // Check if the index.html is not specified on the homepage url
+        } else if (('/' === currentPath) || ('/DACS/' === currentPath)) {
+            // Add aria-current to home menu-item
+            links[0].setAttribute('aria-current', 'page');
+
+        }
+
+    });
 }
+
+
