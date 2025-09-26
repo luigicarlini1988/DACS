@@ -3892,6 +3892,10 @@ header .mini-logo {
         display:none!important;
     }
 
+    .d-mob-block {
+        display:block!important;
+    }
+
     .mob-justify-center {
         justify-content: center;
     }
