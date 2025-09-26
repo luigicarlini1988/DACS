@@ -27,11 +27,10 @@ function includeHTML() {
         }
     }
 
+    // Add aria-current="page" to active menu item
+
     const currentPath = window.location.pathname; // Get the current path
     const links = document.querySelectorAll('.menu-item'); // Select all menu links
-
-    console.log('test');
-    console.log('links:', links)
 
 
     links.forEach(function (link) {
@@ -43,8 +42,6 @@ function includeHTML() {
         if (('/' + starting === currentPath) || ('/DACS/' + starting === currentPath)) {
             // Add aria-current page
             link.setAttribute('aria-current', 'page');
-            console.log('starting path:', starting);
-            console.log('current path:', currentPath);
 
 
             // Check if the index.html is not specified on the homepage url
